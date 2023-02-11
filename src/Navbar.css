@@ -1,0 +1,36 @@
+.navbarContainer {
+  display:flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-evenly;
+  background:rgb(0, 0, 0, 0.3);
+  backdrop-filter: blur(1.5em);
+}
+
+.navbarNameContainer{
+  margin: 10px;
+  padding:20px;
+  box-sizing:border-box;
+}
+
+.navbarNameContainer:hover{
+  outline: 2px solid white;
+}
+
+.navbarTabsContainer{
+  margin: 1rem;
+  gap: 1rem;
+  display:flex;
+  list-style:none;
+  flex: 1;
+}
+
+.navbarTab {
+  padding:1rem;
+}
+
+.navbarTab:hover{
+  outline: 2px solid white;
+}

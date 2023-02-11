@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color:white;
+}
+
+.body {
+  min-height: 100vh;
+  background:none;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+@keyframes sway{
+  0% {
+    transform: translate(2%, 2%);
+  }
+
+  40%{
+    transform: rotate(-3deg);
+  }
+
+  80% {
+    transform: translate(17%, 9%);
+  }
+}
+
+.backgroundEffect {
+  position:fixed;
+  background-attachment:fixed;
+  z-index: -4;
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  width: 200%;
+  height: 220%;
+  animation: 15s linear infinite alternate sway;
+  background: linear-gradient(5deg, #00FFBB 20%, #00797F 40%, #002B39 70%);
+  background-attachment:fixed;
+}
+
+.listOfStars{
+  z-index: -3;
+  position:absolute;
+  top: 10%;
+  left: 5%;
+  list-style: none;
+  transform:rotateZ(20deg);
+}
+
+.shootingStar {
+  position: relative;
+  left: 10%;
+  top: 10%;
+  width: 1em;
+  height: 0.1em;
+  box-shadow: 0 0 1em 0.025em #4fc3dc44;
+  background: linear-gradient(-45deg, #0c397d, #789acf);
+  border-radius: 100em;
+  filter: drop-shadow(0 0 6px, rgba(105, 155, 255, 1));
+  animation: shooting 10s ease-in infinite, tail 10s ease-in infinite;
+}
+
+@keyframes shooting {
+  0% {
+    transform: translateX(0);
+  }
+  92% {
+    box-shadow: 0 0 1em 0.05em #4fc3dc44;
+  }
+  96% {
+    box-shadow: 0 0 1em 0.3em #4fc3dc44;
+  }
+  
+  100% {
+    transform: translateX(50em);
+    box-shadow: 0 0 1em 0em white;
+  }
+}
+
+@keyframes tail{
+  0% {
+    width: 0;
+  }
+
+  30% {
+    width: 100px;
+  }
+
+  100%{
+    width: 0;
+  }
+}
+
+.navbar {
+  height: 100px;
+  width: 100px;
+  position:relative;
+  z-index:1;
+}
+
+/* MEDIA QUERIES */
+
+/* Used for mobile devices*/
+@media screen and (max-width: 480px) {
+
+}
+
+/* Used for iPads and Tablets*/
+@media screen and (max-width: 768px) {
+  .introductionBlock {
+    width:90%;
+  }
+
+}
+
+
+/* Used for Small screens and laptops*/
+@media screen and (max-width: 1024px) {
+}
+
+/* Used for Desktops and large screens*/
+@media screen and (max-width: 1200px) {
+  .introductionText {
+    padding-bottom: 5%;
+  }
+
+  .projectDescription{
+    font-size: 5em;
+  }
+}
+
+
+
+/*
+.bubbles {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bubbles span {
+  color:black;
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: #36454F;
+  margin: 0 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #4fc3dc44,
+  0 0 50px #4fc3dc,
+  0 0 100px #4fc3dc;
+  animation-name: animate;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: calc(60s / var(--i));
+  z-index:1;
+}
+
+.bubbles span:nth-child(even){
+  background: #ff2d75;
+  box-shadow: 0 0 0 10px #ff2d7544,
+  0 0 50px #ff2d75,
+  0 0 100px #ff2d75;
+  z-index:2;
+}
+
+@keyframes animate{
+  0% {
+      transform: translateY(0vh) scale(0);
+    }
+    100% {
+      transform: translateY(120vh) scale(2);
+    }
+}
+*/
