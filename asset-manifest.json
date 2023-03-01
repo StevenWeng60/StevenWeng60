@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/stevenweng60/static/css/main.a6ac2002.css",
+    "main.js": "/stevenweng60/static/js/main.a1fceff5.js",
+    "static/js/787.37faa4c4.chunk.js": "/stevenweng60/static/js/787.37faa4c4.chunk.js",
+    "static/media/goat.jpg": "/stevenweng60/static/media/goat.0c940fa6acbae0a485dd.jpg",
+    "static/media/jetway.jpg": "/stevenweng60/static/media/jetway.b78dcb6c691ea5eeac0b.jpg",
+    "index.html": "/stevenweng60/index.html",
+    "main.a6ac2002.css.map": "/stevenweng60/static/css/main.a6ac2002.css.map",
+    "main.a1fceff5.js.map": "/stevenweng60/static/js/main.a1fceff5.js.map",
+    "787.37faa4c4.chunk.js.map": "/stevenweng60/static/js/787.37faa4c4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a6ac2002.css",
+    "static/js/main.a1fceff5.js"
+  ]
+}
